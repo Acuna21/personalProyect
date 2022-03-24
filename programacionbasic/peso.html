@@ -1,0 +1,93 @@
+st<!DOCTYPE html>
+    <head>
+        <tittle> <h1>Calculando Peso </h1></tittle>
+
+        <style>
+            body{
+                background-color: burlywood;
+                color:black;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            strong{
+                color: red;
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <h1>Descrube tu peso en otros planetas que no son la tierra</h1>
+        <p>Para eso no tienes que indicar <strong> tu peso</strong></p>
+        
+        <script type="text/javascript">
+            alert("Nos tienes que dar tu peso");
+          var peso = prompt("Ingresa tu peso actual en la Tierra: ");
+          var opcion=parseInt(prompt("Ingresa el planeta del cual deseas saber tu peso: 1.Marte  2.Jupier 3.Venus 4.Saturno 5.Urano 6.Nepturno 7.Pluton"));
+            var gravedadTierra= 9.8;
+            var gravedadMarte= 3.7;
+            var gravedadJupiter= 24.8;
+            var gravedadVenus= 8.87;
+            var gravedadSaturno=10.44;
+            var gravedadUrano=8.7;
+            var gravedadNepturno=11.15;
+            var gravedadPluton=0.62;
+            var pesoFinal;
+            var pesoFinalMarte, pesoFinalJupiter, pesoFinalVenus, pesoFinalSaturno, pesoFinalUrano, pesoFinalNepturno, pesoFinalPluton;
+
+            //Peso de Marte//
+            if (opcion==1){
+                pesoFinal=(peso*gravedadMarte)/gravedadTierra;
+                pesoFinalMarte=parseInt(pesoFinal);
+                document.write("Tú peso final en Marte es <strong>"+ pesoFinalMarte+ " kilos </strong>"+ "<br>");
+            }
+            else if (opcion==2){
+                //Peso de Jupiter//
+                pesoFinal=(peso*gravedadJupiter)/gravedadTierra;
+                pesoFinalJupiter=parseInt(pesoFinal);
+                document.write("Tú peso final en Jupiter es "+ pesoFinalJupiter+"<br>");
+
+            }
+            else if (opcion==3){
+                 //Peso de Venus//
+                pesoFinal=(peso*gravedadVenus)/gravedadTierra;
+                pesoFinalVenus=parseInt(pesoFinal);
+                document.write("Tú peso final en Venus es "+ pesoFinalVenus+"<br>");
+            }
+            else if (opcion==4){
+                //Peso de Saturno//
+                pesoFinal=(peso*gravedadSaturno)/gravedadTierra;
+                pesoFinalSaturno=parseInt(pesoFinal);
+                document.write("Tú peso final en Saturno es "+ pesoFinalSaturno+"<br>");
+            }
+            else if (opcion==5){
+                 //Peso de Urano//
+            pesoFinal=(peso*gravedadUrano)/gravedadTierra;
+            pesoFinalUrano=parseInt(pesoFinal);
+            document.write("Tú peso final en Urano es "+ pesoFinalUrano+"<br>");
+
+            }
+            else if (opcion==6){
+                //Peso de Nepturno//
+                pesoFinal=(peso*gravedadNepturno)/gravedadTierra;
+                pesoFinalNepturno=parseInt(pesoFinal);
+                document.write("Tú peso final en Nepturno es "+ pesoFinalNepturno+"<br>");
+
+            }
+            else if(opcion==7){
+                //Peso de Pluton//
+            pesoFinal=(peso*gravedadPluton)/gravedadTierra;
+            pesoFinalPluton=parseInt(pesoFinal);
+            document.write("Tú peso final en Pluton es "+ pesoFinalPluton+"<br>");
+            }
+            else{
+                document.write("Ingrese una opcion valida. Intentelo nuevamente");
+
+            }
+        </script>
+
+    </body>
+</htmls>
